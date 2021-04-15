@@ -1,0 +1,10 @@
+<h2><%= @post.title %></h2>
+
+<p><small>By <%= @post.author %></small></p>
+
+<div>
+  <%= @post.body %>
+</div>
+
+<p><%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %></p>
